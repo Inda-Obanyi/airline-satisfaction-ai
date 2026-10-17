@@ -1,0 +1,85 @@
+{
+    "project": "Airline Customer Satisfaction Prediction",
+    "model": {
+        "name": "Random Forest Classifier",
+        "n_estimators": 100,
+        "random_state": 42,
+        "pipeline": [
+            "Median imputation",
+            "StandardScaler",
+            "Random Forest"
+        ],
+        "selection_status": "Final deployment candidate",
+        "selection_reason": "The 100-tree model provides nearly identical predictive performance to the 200-tree benchmark while reducing model size by approximately 50%."
+    },
+    "target": {
+        "name": "satisfaction",
+        "classes": {
+            "0": "Neutral/Dissatisfied",
+            "1": "Satisfied"
+        }
+    },
+    "features": [
+        "Customer Type",
+        "Age",
+        "Type of Travel",
+        "Class",
+        "Flight Distance",
+        "Seat comfort",
+        "Departure/Arrival time convenient",
+        "Food and drink",
+        "Gate location",
+        "Inflight wifi service",
+        "Inflight entertainment",
+        "Online support",
+        "Ease of Online booking",
+        "On-board service",
+        "Leg room service",
+        "Baggage handling",
+        "Checkin service",
+        "Cleanliness",
+        "Online boarding",
+        "Departure Delay in Minutes",
+        "Arrival Delay in Minutes"
+    ],
+    "categorical_mappings": {
+        "Customer Type": {
+            "0": "Loyal Customer",
+            "1": "Disloyal Customer"
+        },
+        "Type of Travel": {
+            "0": "Business travel",
+            "1": "Personal Travel"
+        },
+        "Class": {
+            "0": "Business",
+            "1": "Eco",
+            "2": "Eco Plus"
+        }
+    },
+    "test_metrics": {
+        "accuracy": 0.9556898675700647,
+        "precision": 0.9687186109915339,
+        "recall": 0.9497080959414785,
+        "f1": 0.9591191617829871,
+        "roc_auc": 0.9927081334524617
+    },
+    "cross_validation": {
+        "folds": 5,
+        "accuracy_mean": 0.9544291018036345,
+        "accuracy_std": 0.0009447978782023254,
+        "precision_mean": 0.967323545819917,
+        "precision_std": 0.0018465289301972604,
+        "recall_mean": 0.948795498505363,
+        "recall_std": 0.0014885217116277977,
+        "f1_mean": 0.9579677900863939,
+        "f1_std": 0.0008573907431352564,
+        "roc_auc_mean": 0.9923081963440307,
+        "roc_auc_std": 0.00022072385715183552
+    },
+    "explainability": {
+        "method": "SHAP",
+        "explainer": "TreeExplainer",
+        "background_sample_size": 1000
+    }
+}

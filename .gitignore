@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+
+# Raw datasets
+data/raw/
+data/processed/
+*.csv
+
+# Local reports
+htmlcov/
+.coverage
