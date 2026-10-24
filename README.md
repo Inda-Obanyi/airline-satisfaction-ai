@@ -125,3 +125,26 @@ GitHub: https://github.com/Inda-Obanyi
 ## License
 
 License to be determined.
+
+---
+
+## Engineering case study | Recruiter overview
+
+### Airline Satisfaction AI
+
+**Project status:** Deployed prototype; further validation planned
+
+**Why I developed it:** Identify service factors associated with passenger satisfaction.
+
+**Engineering process:** EDA → preprocessing → baseline comparisons → Random Forest training and held-out testing → SHAP and What-If analysis → Streamlit deployment → automated tests.
+
+**Evidence and limitations:** The README reports 95.57% held-out test accuracy and ROC-AUC 0.9927; these are dataset results, not production guarantees.
+
+**Planned outcome:** External validation, probability calibration, monitoring and stronger business-facing decision support.
+
+**What this demonstrates:** Problem framing, system implementation, evaluation, communication of limitations, and iterative product thinking.
+
+**[Source repository](https://github.com/Inda-Obanyi/airline-satisfaction-ai)**
+
+**Inda Obanyi** — AI/ML Engineer · Software Developer · Founder, Yaqini & Duniya Technology  
+[Portfolio](https://indaobanyi.vercel.app) · [LinkedIn](https://www.linkedin.com/in/inda-obanyi-8886553a6/) · [GitHub](https://github.com/Inda-Obanyi)
